@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/background_light"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/message_action_bar"
+        style="@style/actionBar"
+        app:expanded="true">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@style/toolbar">
+            <LinearLayout style="@style/horizontalLayout">
+                <TextView
+                    android:id="@+id/action_bar_title"
+                    android:text="@string/add_training"
+                    style="@style/actionBarTitle"/>
+                <TextView
+                    android:id="@+id/submit"
+                    style="@style/actionBarItemEnd"
+                    android:text="@string/done"/>
+            </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/message_action_bar">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/small_margin"
+            android:divider="@drawable/divider"
+            android:showDividers="middle"
+            android:orientation="vertical"
+            android:id="@+id/linearLayout">
+
+            <EditText
+                android:id="@+id/form_title"
+                style="@style/textField"
+                android:hint="@string/titel"
+                android:inputType="text"
+                android:nextFocusDown="@id/form_instructions"/>
+
+            <LinearLayout
+                style="@style/horizontalLayout"
+                android:divider="@drawable/divider"
+                android:showDividers="middle">
+                <Spinner
+                    android:id="@+id/form_category_spinner"
+                    style="@style/primarySpinner"/>
+
+                <TextView
+                    android:id="@+id/form_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/borderbottom"
+                    android:paddingBottom="4dp"
+                    android:hint="@string/date"
+                    android:textAppearance="@android:style/TextAppearance.Material.Medium.Inverse"/>
+            </LinearLayout>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/form_grid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"/>
+            <include
+                android:visibility="gone"
+                layout="@layout/chess_board"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@drawable/divider"
+                android:showDividers="middle"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/camera_button"
+                    style="@style/primaryButton"
+                    android:layout_weight=".40"
+                    android:text="@string/take_picture"
+                    />
+
+                <Button
+                    android:id="@+id/fen_button"
+                    style="@style/primaryButton"
+                    android:layout_weight=".55"
+                    android:text="@string/create_position"/>
+            </LinearLayout>
+            <EditText
+                style="@style/textField"
+                android:id="@+id/form_instructions"
+                android:hint="@string/instruktioner"
+                android:inputType="textMultiLine"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

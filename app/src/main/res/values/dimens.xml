@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="standard_margin">16dp</dimen>
+    <dimen name="small_margin">8dp</dimen>
+    <dimen name="diagram_thumbnail">125dp</dimen>
+    <dimen name="diagram">320dp</dimen>
+</resources>

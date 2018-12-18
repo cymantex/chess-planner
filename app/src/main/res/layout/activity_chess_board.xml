@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:divider="@drawable/divider"
+                  android:showDividers="middle"
+                  android:gravity="center_horizontal">
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/message_action_bar"
+            style="@style/actionBar"
+            app:expanded="true">
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                style="@style/toolbar">
+                <LinearLayout style="@style/horizontalLayout">
+                    <TextView
+                        android:text="@string/create_position"
+                        style="@style/actionBarTitle"/>
+                    <TextView
+                        android:id="@+id/submit"
+                        style="@style/actionBarItemEnd"
+                        android:text="@string/done"/>
+                </LinearLayout>
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.AppBarLayout>
+        <include layout="@layout/chess_board"/>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview_pieces_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</ScrollView>

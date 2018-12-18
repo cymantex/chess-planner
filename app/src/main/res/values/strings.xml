@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">Schackplaneraren</string>
+
+    <!-- Errors -->
+    <string name="error_external_storage">Denna app fungerar bara med enheter som har ett externt lagringsutrymme.</string>
+    <string name="error_start_camera">Något gick fel vid start av kamera</string>
+    <string name="error_save_camera">Något gick fel när bilden skulle sparas</string>
+    <string name="error_unexpected_int">Unexpected argument: %d</string>
+    <string name="error_unexpected_string">Unexpected argument: %s</string>
+
+    <!-- Warnings -->
+    <string name="warning_title">Är du säker?</string>
+    <string name="warning_delete_training">Vill du verkligen ta bort dessa %d markerade träningar?\n\nDe går inte att återställa.</string>
+    <string name="warning_delete_image">Vill du ta bort detta diagram?</string>
+
+    <!-- Filters -->
+    <string name="training_filter_title">Filtrera träningar</string>
+    <string name="filter_all">Visa alla</string>
+    <string name="filter_by">Filtrera efter</string>
+    <string-array name="filter_categories">
+        <item>Öppningar</item>
+        <item>Mittspel</item>
+        <item>Slutspel</item>
+        <item>Skoj</item>
+        <item>Spel</item>
+        <item>Taktik</item>
+        <item>Övrigt</item>
+    </string-array>
+    <string name="sort_title">Sortera efter</string>
+    <string-array name="filter_dates">
+        <item>Datum: Nyaste</item>
+        <item>Datum: Äldsta</item>
+    </string-array>
+    <string name="filter_newest">Datum: Nyaste</string>
+    <string name="filter_oldest">Datum: Äldsta</string>
+
+    <!-- Basic Strings -->
+    <string name="titel">Titel</string>
+    <string name="instruktioner">Instruktioner</string>
+    <string name="trainings">Träningar</string>
+    <string name="filtering">Filtrera</string>
+    <string name="delete">Ta bort</string>
+    <string name="edit">Ändra</string>
+    <string name="add">Lägg till</string>
+    <string name="yes">Ja</string>
+    <string name="no">Nej</string>
+    <string name="done">Klar</string>
+    <string name="search">Sök</string>
+    <string name="date">Datum</string>
+
+    <!-- Content -->
+    <string name="add_training">Lägg till ny träning</string>
+    <string name="take_picture">Fotografera ställning</string>
+    <string name="search_training">Sök träningar</string>
+    <string name="remove_marked">Ta bort markerade</string>
+    <string name="edit_training">Ändra Träning</string>
+    <string name="create_position">Skapa ställning</string>
+
+    <!-- ImageView decriptions -->
+    <string name="desc_diagram">diagram</string>
+    <string name="desc_delete_diagram">ta bort diagram</string>
+</resources>

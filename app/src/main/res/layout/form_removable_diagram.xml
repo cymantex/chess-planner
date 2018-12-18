@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_weight=".33">
+    <ImageView
+        android:id="@+id/diagram_image"
+        android:layout_margin="4dp"
+        android:layout_height="@dimen/diagram_thumbnail"
+        android:layout_width="@dimen/diagram_thumbnail"
+        android:scaleType="fitXY"
+        android:contentDescription="@string/desc_diagram"/>
+    <ImageView
+        android:layout_marginTop="4dp"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignEnd="@id/diagram_image"
+        android:src="@drawable/delete"
+        android:contentDescription="@string/desc_delete_diagram"/>
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/background_light"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/message_action_bar"
+        style="@style/actionBar"
+        app:expanded="true">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@style/toolbar">
+            <LinearLayout style="@style/horizontalLayout">
+                <TextView
+                    android:text="@string/training_filter_title"
+                    style="@style/actionBarTitle"/>
+            </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+    <ExpandableListView
+        android:id="@+id/filter_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/message_action_bar"/>
+</RelativeLayout>

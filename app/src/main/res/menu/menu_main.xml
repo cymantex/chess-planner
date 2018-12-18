@@ -1,0 +1,36 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      android:id="@+id/main_menu"
+      tools:context=".MainActivity">
+    <item
+        android:id="@+id/menu_item_filter"
+        android:orderInCategory="101"
+        android:title="@string/filtering"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/filter" />
+    <item android:id="@+id/menu_item_add"
+          android:orderInCategory="102"
+          android:title="@string/add_training"
+          app:showAsAction="ifRoom"
+          android:icon="@drawable/add"/>
+    <item
+        android:id="@+id/menu_item_search"
+        android:orderInCategory="103"
+        android:title="@string/search"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/search"/>
+    <item android:id="@+id/menu_item_delete"
+          android:orderInCategory="104"
+          android:title="@string/remove_marked"
+          app:showAsAction="ifRoom"
+          android:visible="false"
+          android:icon="@drawable/trashcan"/>
+    <item
+        android:id="@+id/menu_item_edit"
+        android:orderInCategory="105"
+        android:title="@string/edit_training"
+        app:showAsAction="ifRoom"
+        android:visible="false"
+        android:icon="@drawable/edit"/>
+</menu>

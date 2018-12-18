@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FEN Reader</string>
+
+    <!-- Content descriptions -->
+    <string name="desc_mark">Press to mark</string>
+    <string name="done">Done</string>
+</resources>
